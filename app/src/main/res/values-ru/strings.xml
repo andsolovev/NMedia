@@ -2,4 +2,15 @@
 <resources>
     <string name="app_name">НМедиа</string>
     <string name="nmedia">НМедиа!</string>
+    <string name="netology_description">Нетология. Университет интернет-рофессий будущего.</string>
+    <string name="timeOfPublishing">21 мая 18:36</string>
+    <string name="avatarlogo">avatarLogo</string>
+    <string name="morevert">moreVert</string>
+    <string name="netologyPostContent">Привет! Это новая Нетология. Когда-то Нетология начиналась с интенсивов по онлайн-маркетингу. Затем появились курсы по дизайну, разработке, аналитике и управлению.</string>
+    <string name="numberOfLikes">10</string>
+    <string name="numberOfShares">5</string>
+    <string name="numberOfViews">5</string>
+    <string name="likeLogo">likeLogo</string>
+    <string name="shareLogo">shareLogo</string>
+    <string name="viewsLogo">viewsLogo</string>
 </resources>
