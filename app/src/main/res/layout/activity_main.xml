@@ -88,7 +88,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/barrier2"
         app:srcCompat="@drawable/ic_baseline_favorite_border_24"
-        app:tint="#A7A7A7" />
+        />
 
     <ImageView
         android:id="@+id/shareLogo"
@@ -99,7 +99,7 @@
         app:layout_constraintStart_toEndOf="@id/likesCount"
         app:layout_constraintTop_toTopOf="@id/likesCount"
         app:srcCompat="@drawable/ic_baseline_share_24"
-        app:tint="#A7A7A7" />
+        />
 
     <ImageView
         android:id="@+id/viewsLogo"
@@ -110,7 +110,7 @@
         app:layout_constraintEnd_toStartOf="@id/viewsCount"
         app:layout_constraintTop_toTopOf="@id/viewsCount"
         app:srcCompat="@drawable/ic_baseline_remove_red_eye_24"
-        app:tint="#A7A7A7" />
+        />
 
     <TextView
         android:id="@+id/likesCount"
