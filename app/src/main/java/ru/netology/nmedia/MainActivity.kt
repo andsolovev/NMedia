@@ -41,11 +41,8 @@ class MainActivity : AppCompatActivity() {
             }
 
             shareLogo.setOnClickListener {
-                post.sharedByMe = !post.sharedByMe
-                shareLogo.setImageResource(
-                    if (post.sharedByMe) R.drawable.ic_share_24_blue else R.drawable.ic_baseline_share_24
-                )
-                if (post.sharedByMe) post.shares++ else post.shares--
+                shareLogo.setImageResource(R.drawable.ic_share_24_blue)
+                post.shares+=100
                 sharesCount.text = formatCount(post.shares)
             }
         }
