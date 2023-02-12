@@ -13,4 +13,10 @@
     <string name="likeLogo">likeLogo</string>
     <string name="shareLogo">shareLogo</string>
     <string name="viewsLogo">viewsLogo</string>
+    <string name="menu_edit">Редактировать</string>
+    <string name="menu_remove">Удалить</string>
+    <string name="post_text">Текст</string>
+    <string name="saveButton">saveButton</string>
+    <string name="clearButton">clearButton</string>
+    <string name="error_empty_content">Текст не может быть пустым</string>
 </resources>
