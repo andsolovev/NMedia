@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="@dimen/common_spacing"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <TextView
         android:id="@+id/author"
@@ -45,13 +45,13 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/menu"
+        style="@style/Widget.App.OnlyIconButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/morevert"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:icon="@drawable/ic_baseline_more_vert_24"
-        style="@style/Widget.App.OnlyIconButton"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
@@ -73,6 +73,36 @@
         android:text="@string/netologyPostContent"
         app:layout_constraintTop_toBottomOf="@id/barrier" />
 
+    <ImageView
+        android:id="@+id/video_preview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_height"
+        android:layout_marginBottom="@dimen/common_spacing"
+        android:contentDescription="@string/video"
+        android:src="@drawable/video_preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/postText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/play"
+        style="@style/Widget.App.PlayButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:checkable="true"
+        android:contentDescription="@string/video"
+        app:icon="@drawable/ic_baseline_play_circle_outline_48"
+        app:layout_constraintBottom_toBottomOf="@id/video_preview"
+        app:layout_constraintLeft_toLeftOf="@id/video_preview"
+        app:layout_constraintRight_toRightOf="@id/video_preview"
+        app:layout_constraintTop_toTopOf="@id/video_preview" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/videoGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="video_preview,play" />
+
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"
         android:layout_width="match_parent"
@@ -91,8 +121,7 @@
         android:contentDescription="@string/likeLogo"
         android:text="@string/numberOfLikes"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/barrier2"
-        />
+        app:layout_constraintTop_toBottomOf="@id/video_preview" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/shareLogo"
@@ -103,7 +132,7 @@
         android:contentDescription="@string/shareLogo"
         android:text="@string/numberOfShares"
         app:layout_constraintStart_toEndOf="@id/likeLogo"
-        app:layout_constraintTop_toBottomOf="@id/barrier2" />
+        app:layout_constraintTop_toBottomOf="@id/video_preview" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/viewsLogo"
@@ -111,10 +140,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/viewsLogo"
+        app:icon="@drawable/ic_baseline_remove_red_eye_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/barrier2"
-        app:icon="@drawable/ic_baseline_remove_red_eye_24"/>
+        app:layout_constraintTop_toBottomOf="@id/video_preview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

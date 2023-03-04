@@ -18,4 +18,5 @@
     <string name="saveButton">saveButton</string>
     <string name="clearButton">clearButton</string>
     <string name="error_empty_content">Text can\'t be empty</string>
+    <string name="video">video</string>
 </resources>
